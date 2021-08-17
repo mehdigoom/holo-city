@@ -15,6 +15,18 @@ app.get('/', (req, res) => {
 })
 
 
+app.get('/three.js', (req, res) => {
+
+    
+    res.sendFile(path.join( __dirname, "Pages/JS/three.js"));
+})
+
+app.get('/main.js', (req, res) => {
+
+    
+    res.sendFile(path.join( __dirname, "Pages/JS/main.js"));
+})
+
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
